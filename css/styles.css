@@ -156,7 +156,7 @@ section {
 /* about */
 .about-heading { text-align: center; margin-bottom: 2.5rem; }
 .about-row { display: grid; grid-template-columns: 2fr 1fr; gap: clamp(2.5rem, 7vw, 5rem); align-items: start; }
-.about-media { width: 80%; margin-left: auto; position: sticky; top: 90px; }
+.about-media { width: 90%; margin-left: auto; position: sticky; top: 90px; }
 .about-media img { width: 100%; height: auto; display: block; }
 
 /* services */
