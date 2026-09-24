@@ -1,30 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Sitio</title>
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santiago Aranguren — Cine de Bodas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1>Mi Sitio</h1>
-    <p>Sitio estático de ejemplo, listo para Netlify.</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Bienvenido</h2>
-      <p>Esta es una página de ejemplo. Reemplazá este contenido por el tuyo.</p>
-      <button id="greet-btn">Saludar</button>
-      <p id="greet-output"></p>
-    </section>
-  </main>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <img src="images/logo.png" alt="Santiago Aranguren">
+    </a>
+    <div class="header-right">
+      <nav class="main-nav main-nav-right">
+        <a href="#sobre-mi" data-es="Sobre mí" data-en="About">Sobre mí</a>
+        <a href="#portfolio" data-es="Films" data-en="Featured Work">Films</a>
+        <a href="#servicios" data-es="Packs" data-en="Packs">Packs</a>
+        <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+      </nav>
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">EN</button>
+    </div>
+  </div>
+</header>
 
-  <footer>
-    <p>&copy; 2026 Mi Sitio</p>
-  </footer>
+<main id="top">
 
-  <script src="js/main.js"></script>
+  <section class="hero reveal">
+    <div class="hero-media">
+      <img src="images/hero.png" alt="" width="1200" height="720">
+    </div>
+    <div class="hero-copy">
+      <h1 data-es="Santiago Aranguren" data-en="Santiago Aranguren">Santiago Aranguren</h1>
+      <p data-es="Más que un registro, cada película es una forma de volver a vivir un día único." data-en="More than a record, every film is a way to relive a singular day.">Más que un registro, cada película es una forma de volver a vivir un día único.</p>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="about reveal">
+    <h2 class="about-heading" data-es="Introducción" data-en="Introduction">Introducción</h2>
+    <div class="about-row">
+    <div class="about-copy">
+      <p data-es="Permítanme presentarme: soy argentino y vine a Portugal hace 3 años. Me casé el año pasado y pasé todo el último año dedicándome a filmar muchos matrimonios." data-en="Let me introduce myself: I'm Argentine and moved to Portugal three years ago. I got married last year, and I spent the past year filming weddings.">Permítanme presentarme: soy argentino y vine a Portugal hace 3 años. Me casé el año pasado y pasé todo el último año dedicándome a filmar muchos matrimonios.</p>
+      <p data-es="En mi propia boda no tuve videógrafo. Solo alguien grabó todo con una handycam antigua. Y, curiosamente, eso terminó siendo mi mayor regalo: un registro simple, crudo y genuino de uno de los días más importantes de mi vida." data-en="At my own wedding, I didn't have a videographer — just someone recording everything on an old handycam. And, oddly enough, that turned out to be my greatest gift: a simple, raw, genuine record of one of the most important days of my life.">En mi propia boda no tuve videógrafo. Solo alguien grabó todo con una handycam antigua. Y, curiosamente, eso terminó siendo mi mayor regalo: un registro simple, crudo y genuino de uno de los días más importantes de mi vida.</p>
+      <p data-es="Más que una “película”, lo que tengo es un verdadero documental de lo que ese día fue en realidad. Esa experiencia cambió completamente la forma en que veo el video de bodas. Me di cuenta de que el valor no está solo en la estética o en la perfección de la imagen, sino en la capacidad de una película de seguir teniendo significado dentro de muchos años." data-en="More than a “film,” what I have is a real documentary of what that day actually was. That experience completely changed how I see wedding video. I realized the value isn't only in the aesthetics or the perfection of the image, but in a film's ability to keep meaning years later.">Más que una &ldquo;película&rdquo;, lo que tengo es un verdadero documental de lo que ese día fue en realidad. Esa experiencia cambió completamente la forma en que veo el video de bodas. Me di cuenta de que el valor no está solo en la estética o en la perfección de la imagen, sino en la capacidad de una película de seguir teniendo significado dentro de muchos años.</p>
+      <p data-es="Hoy es esa visión la que llevo a cada boda que filmo: crear recuerdos reales, atemporales y auténticos; más que imágenes bonitas, momentos que el tiempo nunca borra." data-en="That's the vision I bring to every wedding I film today: creating memories that are real, timeless and authentic — more than pretty images, moments that time never erases.">Hoy es esa visión la que llevo a cada boda que filmo: crear recuerdos reales, atemporales y auténticos; más que imágenes bonitas, momentos que el tiempo nunca borra.</p>
+    </div>
+    <div class="about-media">
+      <img src="images/about.png" alt="" width="675" height="844">
+    </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio reveal">
+    <h2 data-es="Portfolio" data-en="Portfolio">Portfolio</h2>
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/8jKey8mxeqc" title="Video de casamiento" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <p class="video-caption" data-es="[Pareja] · [Lugar]" data-en="[Couple] · [Location]">[Pareja] · [Lugar]</p>
+      </div>
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/cCoM2bPRcLc" title="Video de casamiento" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <p class="video-caption" data-es="[Pareja] · [Lugar]" data-en="[Couple] · [Location]">[Pareja] · [Lugar]</p>
+      </div>
+      <div class="video-card">
+        <div class="video-embed ph" data-label="[VIDEO PENDIENTE]"></div>
+        <p class="video-caption" data-es="[Pareja] · [Lugar]" data-en="[Couple] · [Location]">[Pareja] · [Lugar]</p>
+      </div>
+      <div class="video-card">
+        <div class="video-embed ph" data-label="[VIDEO PENDIENTE]"></div>
+        <p class="video-caption" data-es="[Pareja] · [Lugar]" data-en="[Couple] · [Location]">[Pareja] · [Lugar]</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="gallery reveal">
+    <h2 data-es="Momentos" data-en="Moments">Momentos</h2>
+    <div class="gallery-grid">
+      <div class="ph gallery-item item-1" data-label="[FOTO 1]"></div>
+      <div class="ph gallery-item item-2" data-label="[FOTO 2]"></div>
+      <div class="ph gallery-item item-3" data-label="[FOTO 3]"></div>
+      <div class="ph gallery-item item-4" data-label="[FOTO 4]"></div>
+      <div class="ph gallery-item item-5" data-label="[FOTO 5]"></div>
+      <div class="ph gallery-item item-6" data-label="[FOTO 6]"></div>
+    </div>
+  </section>
+
+  <section id="servicios" class="services reveal">
+    <h2 data-es="Servicios" data-en="Services">Servicios</h2>
+    <div class="pack-grid">
+
+      <article class="pack">
+        <h3 data-es="Essential" data-en="Essential">Essential</h3>
+        <p class="pack-price">€800</p>
+        <ul>
+          <li data-es="Un día completo de casamiento, un videógrafo, cámaras 4K" data-en="A full wedding day, one videographer, 4K cameras">Un día completo de casamiento, un videógrafo, cámaras 4K</li>
+          <li data-es="Video del casamiento: 5–7 minutos" data-en="Wedding video: 5–7 minutes">Video del casamiento: 5–7 minutos</li>
+          <li data-es="Short del casamiento: 20–40 segundos" data-en="Wedding short: 20–40 seconds">Short del casamiento: 20–40 segundos</li>
+        </ul>
+        <p class="pack-desc" data-es="Una película que reúne los momentos más importantes de su boda." data-en="A film that gathers the most important moments of your wedding.">Una película que reúne los momentos más importantes de su boda.</p>
+        <a href="#contacto" class="pack-cta" data-es="Solicitar información" data-en="Request information">Solicitar información</a>
+      </article>
+
+      <article class="pack pack-featured">
+        <p class="pack-tag" data-es="Más elegido" data-en="Most chosen">Más elegido</p>
+        <h3 data-es="Signature" data-en="Signature">Signature</h3>
+        <p class="pack-price">€1.599</p>
+        <ul>
+          <li data-es="Un día completo de casamiento, dos videógrafos, cámaras 4K y dron" data-en="A full wedding day, two videographers, 4K cameras and drone">Un día completo de casamiento, dos videógrafos, cámaras 4K y dron</li>
+          <li data-es="Video del casamiento: 10–12 minutos" data-en="Wedding video: 10–12 minutes">Video del casamiento: 10–12 minutos</li>
+          <li data-es="Short del casamiento: 1–2 minutos" data-en="Wedding short: 1–2 minutes">Short del casamiento: 1–2 minutos</li>
+        </ul>
+        <p class="pack-desc" data-es="Una cobertura más completa, con dos videógrafos y una narrativa más rica para revivir cada emoción." data-en="Fuller coverage, with two videographers and a richer narrative to relive every emotion.">Una cobertura más completa, con dos videógrafos y una narrativa más rica para revivir cada emoción.</p>
+        <a href="#contacto" class="pack-cta" data-es="Solicitar información" data-en="Request information">Solicitar información</a>
+      </article>
+
+      <article class="pack">
+        <h3 data-es="Cinema" data-en="Cinema">Cinema</h3>
+        <p class="pack-price">€2.599</p>
+        <ul>
+          <li data-es="Un día completo de casamiento, dos videógrafos, cámaras 4K y dron" data-en="A full wedding day, two videographers, 4K cameras and drone">Un día completo de casamiento, dos videógrafos, cámaras 4K y dron</li>
+          <li data-es="Video del casamiento: 20–25 minutos" data-en="Wedding video: 20–25 minutes">Video del casamiento: 20–25 minutos</li>
+          <li data-es="Short del casamiento: 1–2 minutos" data-en="Wedding short: 1–2 minutes">Short del casamiento: 1–2 minutos</li>
+          <li data-es="3 highlight reels: 15–30 segundos" data-en="3 highlight reels: 15–30 seconds">3 highlight reels: 15–30 segundos</li>
+          <li data-es="Ceremonia completa" data-en="Full ceremony">Ceremonia completa</li>
+          <li data-es="Discursos completos" data-en="Full speeches">Discursos completos</li>
+        </ul>
+        <p class="pack-desc" data-es="La experiencia más completa, creada para quienes desean conservar su boda en su totalidad, hoy y dentro de muchos años." data-en="The most complete experience, made for those who want to keep their wedding in full, today and years from now.">La experiencia más completa, creada para quienes desean conservar su boda en su totalidad, hoy y dentro de muchos años.</p>
+        <a href="#contacto" class="pack-cta" data-es="Solicitar información" data-en="Request information">Solicitar información</a>
+      </article>
+
+    </div>
+
+    <div class="extras">
+      <h3 data-es="Extras" data-en="Extras">Extras</h3>
+      <ul class="extras-list">
+        <li>
+          <span class="extra-name" data-es="Ceremonia completa" data-en="Full ceremony">Ceremonia completa</span>
+          <span class="extra-price">€299</span>
+          <span class="extra-desc" data-es="Revivan cada palabra, cada voto y cada emoción exactamente como sucedieron." data-en="Relive every word, every vow and every emotion exactly as they happened.">Revivan cada palabra, cada voto y cada emoción exactamente como sucedieron.</span>
+        </li>
+        <li>
+          <span class="extra-name" data-es="Discursos completos" data-en="Full speeches">Discursos completos</span>
+          <span class="extra-price">€199</span>
+          <span class="extra-desc" data-es="Conserven para siempre las palabras de sus familiares y amigos." data-en="Keep your family and friends' words forever.">Conserven para siempre las palabras de sus familiares y amigos.</span>
+        </li>
+        <li>
+          <span class="extra-name" data-es="Sesión Pre-Wedding (Fotografía y Video)" data-en="Pre-wedding session (Photo & Video)">Sesión Pre-Wedding (Fotografía y Video)</span>
+          <span class="extra-price">€399</span>
+          <span class="extra-desc" data-es="Para crear recuerdos antes del gran día y sentirse más cómodos frente a la cámara." data-en="To create memories before the big day and feel more at ease in front of the camera.">Para crear recuerdos antes del gran día y sentirse más cómodos frente a la cámara.</span>
+        </li>
+        <li>
+          <span class="extra-name" data-es="Disco con todo el contenido captado (RAW)" data-en="Raw footage disc">Disco con todo el contenido captado (RAW)</span>
+          <span class="extra-price">€499</span>
+          <span class="extra-desc" data-es="Todas las grabaciones captadas durante la boda, sin cortes." data-en="All the footage captured during the wedding, uncut.">Todas las grabaciones captadas durante la boda, sin cortes.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq" class="faq reveal">
+    <h2 data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</h2>
+    <div class="faq-list">
+      <details>
+        <summary data-es="¿Cuánto tiempo tardamos en recibir el video final?" data-en="How long until we receive the final video?">¿Cuánto tiempo tardamos en recibir el video final?</summary>
+        <p data-es="La película se entrega en un plazo máximo de 3 meses después de la boda." data-en="The film is delivered within a maximum of 3 months after the wedding.">La película se entrega en un plazo máximo de 3 meses después de la boda.</p>
+      </details>
+      <details>
+        <summary data-es="¿Cómo funciona el pago?" data-en="How does payment work?">¿Cómo funciona el pago?</summary>
+        <p data-es="El pago se divide en dos etapas: 50% al confirmar la reserva y 50% en la entrega de los videos." data-en="Payment is split into two stages: 50% to confirm the booking, and 50% on delivery of the videos.">El pago se divide en dos etapas: 50% al confirmar la reserva y 50% en la entrega de los videos.</p>
+      </details>
+      <details>
+        <summary data-es="[PREGUNTA 3]" data-en="[QUESTION 3]">[PREGUNTA 3]</summary>
+        <p data-es="[RESPUESTA 3]" data-en="[ANSWER 3]">[RESPUESTA 3]</p>
+      </details>
+      <details>
+        <summary data-es="[PREGUNTA 4]" data-en="[QUESTION 4]">[PREGUNTA 4]</summary>
+        <p data-es="[RESPUESTA 4]" data-en="[ANSWER 4]">[RESPUESTA 4]</p>
+      </details>
+      <details>
+        <summary data-es="[PREGUNTA 5]" data-en="[QUESTION 5]">[PREGUNTA 5]</summary>
+        <p data-es="[RESPUESTA 5]" data-en="[ANSWER 5]">[RESPUESTA 5]</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact reveal">
+    <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+    <p data-es="Cuéntenme sobre ustedes y su boda, y les responderé a la brevedad." data-en="Tell me about yourselves and your wedding, and I'll get back to you shortly.">Cuéntenme sobre ustedes y su boda, y les responderé a la brevedad.</p>
+
+    <form name="contacto" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="contacto">
+      <p class="hidden-field">
+        <label>No completar: <input name="bot-field"></label>
+      </p>
+
+      <label for="nombre" data-es="Nombre" data-en="Name">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email" data-es="Email" data-en="Email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="fecha" data-es="Fecha del casamiento" data-en="Wedding date">Fecha del casamiento</label>
+      <input type="date" id="fecha" name="fecha">
+
+      <label for="mensaje" data-es="Mensaje" data-en="Message">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+      <button type="submit" data-es="Enviar" data-en="Send">Enviar</button>
+    </form>
+
+    <div class="direct-contact">
+      <a href="[WHATSAPP_LINK]" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.2.3 0 .6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.7-.1l1.9.9c.2.1.4.2.5.3.1.2.1.9-.1 1.7Z"/></svg>
+        <span data-es="WhatsApp" data-en="WhatsApp">WhatsApp</span>
+      </a>
+      <a href="[INSTAGRAM_LINK]" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1"/></svg>
+        <span data-es="Instagram" data-en="Instagram">Instagram</span>
+      </a>
+      <a href="mailto:[EMAIL]">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 6l8.5 6.5L20.5 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span data-es="[EMAIL]" data-en="[EMAIL]">[EMAIL]</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p data-es="© 2026 Santiago Aranguren. Todos los derechos reservados." data-en="© 2026 Santiago Aranguren. All rights reserved.">© 2026 Santiago Aranguren. Todos los derechos reservados.</p>
+  <div class="footer-icons">
+    <a href="[INSTAGRAM_LINK]" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1"/></svg>
+    </a>
+    <a href="[YOUTUBE_LINK]" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5.5" width="20" height="13" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.2 9.3v5.4l4.8-2.7-4.8-2.7Z"/></svg>
+    </a>
+    <a href="[WHATSAPP_LINK]" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.2.3 0 .6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.7-.1l1.9.9c.2.1.4.2.5.3.1.2.1.9-.1 1.7Z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
