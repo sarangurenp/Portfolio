@@ -283,9 +283,12 @@ section {
 
 /* responsive */
 @media (max-width: 860px) {
+  .pack-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
   .about-row { grid-template-columns: 1fr; }
   .about-media { position: static; }
-  .pack-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
