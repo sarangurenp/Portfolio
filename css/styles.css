@@ -128,7 +128,7 @@ section {
 /* portfolio */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
 }
 .video-embed { aspect-ratio: 16 / 9; border: 1px solid var(--line); overflow: hidden; filter: grayscale(100%); }
