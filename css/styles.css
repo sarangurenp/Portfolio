@@ -93,7 +93,7 @@ section {
   justify-content: space-between;
   gap: 1rem;
 }
-.logo img { height: 42px; width: auto; filter: none; }
+.logo img { height: 58px; width: auto; filter: none; }
 .header-right { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2rem); }
 .main-nav {
   display: flex;
