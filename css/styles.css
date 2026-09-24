@@ -216,7 +216,7 @@ section {
 .pack-details dt:last-of-type, .pack-details dd:last-of-type { border-bottom: none; }
 .pack-details dt { font-size: 0.85rem; color: var(--muted); }
 .pack-details dd { margin: 0; font-size: 0.98rem; }
-.pack-details dd.pack-price { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; grid-column: 2; }
+.pack-details dd.pack-price { font-family: var(--font-heading); font-size: 1.4rem; font-weight: 600; grid-column: 2; }
 
 .pack-desc { font-size: 0.92rem; font-style: italic; color: var(--muted); margin: 1.5rem 0; }
 
@@ -248,7 +248,7 @@ section {
   border-top: 1px solid rgba(0,0,0,0.12);
 }
 .extra-name { font-family: var(--font-serif); font-size: 1.05rem; }
-.extra-price { font-family: var(--font-serif); font-size: 1.05rem; }
+.extra-price { font-family: var(--font-heading); font-weight: 600; font-size: 1.05rem; }
 .extra-desc { grid-column: 1 / -1; font-size: 0.88rem; color: var(--muted); }
 
 /* faq */
