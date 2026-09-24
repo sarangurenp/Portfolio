@@ -96,19 +96,16 @@ section {
 .header-inner {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 1.5rem 1.5rem 1.2rem;
+  padding: 0.9rem 1.5rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
-.logo img { height: 90px; width: auto; filter: none; }
+.logo img { height: 76px; width: auto; filter: none; }
 
-.header-nav-bar { width: 100%; background: #f4f4f4; }
 .header-right {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0.8rem 1.5rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: clamp(1rem, 3vw, 2rem);
 }
