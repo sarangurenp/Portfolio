@@ -44,6 +44,14 @@ section {
   padding: clamp(3rem, 8vw, 6rem) 1.5rem;
 }
 
+.full-bleed {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.full-bleed img { width: 100%; height: auto; display: block; }
+
 /* placeholder blocks */
 .ph {
   position: relative;
