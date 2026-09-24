@@ -151,16 +151,6 @@ section {
 }
 .video-embed img, .video-embed iframe { width: 100%; height: 100%; border: 0; object-fit: cover; }
 
-/* gallery */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 200px;
-  gap: 1rem;
-}
-.gallery-item.item-1 { grid-column: span 2; grid-row: span 2; }
-.gallery-item.item-4 { grid-column: span 2; }
-
 /* about */
 .about-heading { text-align: left; margin-bottom: 2.5rem; }
 .about-row { display: flex; gap: clamp(2.5rem, 7vw, 5rem); align-items: stretch; }
@@ -305,7 +295,4 @@ section {
   .header-right { flex-direction: column; gap: 0.6rem; }
   .main-nav { gap: 0.9rem; font-size: 0.85rem; flex-wrap: wrap; justify-content: center; }
   .video-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 140px; }
-  .gallery-item.item-1 { grid-column: span 2; grid-row: span 1; }
-  .gallery-item.item-4 { grid-column: span 1; }
 }
