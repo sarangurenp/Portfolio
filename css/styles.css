@@ -43,7 +43,7 @@ iframe { max-width: 100%; display: block; border: 0; }
 section {
   max-width: 1160px;
   margin: 0 auto;
-  padding: clamp(3rem, 8vw, 6rem) 1.5rem;
+  padding: clamp(1.8rem, 4.5vw, 3.5rem) 1.5rem;
 }
 
 .full-bleed {
@@ -92,7 +92,6 @@ section {
   top: 0;
   z-index: 50;
   background: var(--bg);
-  border-bottom: 1px solid var(--line);
 }
 .header-inner {
   max-width: 1160px;
@@ -145,7 +144,6 @@ section {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
-  border: 1px solid var(--line);
   overflow: hidden;
   padding: 0;
   background: none;
@@ -168,7 +166,6 @@ section {
   justify-content: center;
   gap: 1.5rem;
   margin: -1rem 0 3rem;
-  border-bottom: 1px solid var(--line);
   padding-bottom: 1rem;
 }
 .pack-tabs .pack-tab {
@@ -238,14 +235,13 @@ section {
 }
 .pack-cta:hover { background: var(--fg); color: var(--bg); }
 
-.extras { margin-top: 3.5rem; border-top: 1px solid var(--line); padding-top: 2rem; }
+.extras { margin-top: 3.5rem; padding-top: 2rem; }
 .extras-list { list-style: none; padding: 0; margin: 0; }
 .extras-list li {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 0.2rem 1rem;
   padding: 1rem 0;
-  border-top: 1px solid rgba(0,0,0,0.12);
 }
 .extra-name { font-family: var(--font-serif); font-size: 1.05rem; }
 .extra-price { font-family: var(--font-heading); font-weight: 600; font-size: 1.05rem; }
@@ -253,10 +249,8 @@ section {
 
 /* faq */
 .faq-list details {
-  border-top: 1px solid var(--line);
   padding: 1.1rem 0;
 }
-.faq-list details:last-child { border-bottom: 1px solid var(--line); }
 .faq-list summary {
   cursor: pointer;
   font-family: var(--font-heading);
@@ -314,7 +308,6 @@ section {
 
 /* footer */
 .site-footer {
-  border-top: 1px solid var(--line);
   padding: 2rem 1.5rem;
   display: flex;
   flex-wrap: wrap;
