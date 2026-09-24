@@ -28,6 +28,19 @@
     });
   }
 
+  document.querySelectorAll(".video-embed[data-yt-id]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.getAttribute("data-yt-id");
+      const iframe = document.createElement("iframe");
+      iframe.className = "video-embed";
+      iframe.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1";
+      iframe.title = "Video de casamiento";
+      iframe.allow = "autoplay; encrypted-media";
+      iframe.allowFullscreen = true;
+      btn.replaceWith(iframe);
+    });
+  });
+
   const revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
