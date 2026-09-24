@@ -118,7 +118,8 @@ section {
 /* hero */
 .hero { padding-top: 0; max-width: none; }
 .hero-media {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   aspect-ratio: 1200 / 720;
   border-left: none;
   border-right: none;
