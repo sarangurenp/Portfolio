@@ -161,6 +161,7 @@ section {
 /* services — pack slider */
 .pack-tabs {
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
   margin: -1rem 0 3rem;
   border-bottom: 1px solid var(--line);
@@ -179,13 +180,8 @@ section {
 }
 .pack-tabs .pack-tab.active { color: var(--fg); font-weight: 600; }
 
-.pack-slide {
-  display: none;
-  grid-template-columns: 1.3fr 1fr;
-  gap: clamp(2rem, 6vw, 5rem);
-  align-items: start;
-}
-.pack-slide.active { display: grid; }
+.pack-slide { display: none; max-width: 640px; margin: 0 auto; text-align: center; }
+.pack-slide.active { display: block; }
 .pack-slide h3 { font-size: 1.6rem; }
 .pack-slide h3 em { font-style: italic; font-family: var(--font-serif); font-size: 1rem; color: var(--muted); margin-left: 0.4rem; }
 
@@ -193,13 +189,13 @@ section {
   display: grid;
   grid-template-columns: 160px 1fr;
   gap: 0.8rem 1.5rem;
-  margin: 1.8rem 0 0;
+  margin: 1.8rem 0;
+  text-align: left;
 }
 .pack-details dt { font-size: 0.85rem; color: var(--muted); }
 .pack-details dd { margin: 0; font-size: 0.98rem; }
 
-.pack-summary { padding-top: 3.2rem; }
-.pack-price { font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 1.5rem; }
+.pack-price { font-family: var(--font-serif); font-size: 2rem; margin-bottom: 1.2rem; }
 .pack-desc { font-size: 0.92rem; font-style: italic; color: var(--muted); margin-bottom: 1.5rem; }
 .pack-cta {
   display: inline-block;
@@ -302,8 +298,6 @@ section {
 
 /* responsive */
 @media (max-width: 640px) {
-  .pack-slide.active { grid-template-columns: 1fr; }
-  .pack-summary { padding-top: 0; margin-top: 2rem; }
   .pack-details { grid-template-columns: 1fr; gap: 0.3rem 0; }
   .pack-details dt { margin-top: 0.6rem; }
 }
