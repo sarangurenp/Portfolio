@@ -41,6 +41,16 @@
     });
   });
 
+  const packTabs = document.querySelectorAll(".pack-tab");
+  const packSlides = document.querySelectorAll(".pack-slide");
+  packTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const pack = tab.getAttribute("data-pack");
+      packTabs.forEach((t) => t.classList.toggle("active", t === tab));
+      packSlides.forEach((s) => s.classList.toggle("active", s.getAttribute("data-pack") === pack));
+    });
+  });
+
   const revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
