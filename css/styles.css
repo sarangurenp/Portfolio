@@ -41,9 +41,9 @@ img, video { max-width: 100%; display: block; }
 iframe { max-width: 100%; display: block; border: 0; }
 
 section {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: clamp(1.75rem, 3.8vw, 3rem) 1.5rem;
+  max-width: none;
+  margin: 0;
+  padding: clamp(1.75rem, 3.8vw, 3rem) max(5vw, 1rem);
 }
 
 .full-bleed {
@@ -94,9 +94,9 @@ section {
   background: var(--bg);
 }
 .header-inner {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0.9rem 1.5rem;
+  max-width: none;
+  margin: 0;
+  padding: 0.9rem max(5vw, 1rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -315,7 +315,7 @@ section {
 
 /* footer */
 .site-footer {
-  padding: 2rem 1.5rem;
+  padding: 2rem max(5vw, 1rem);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
