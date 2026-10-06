@@ -162,94 +162,6 @@ section {
 .about-media { flex: 1; }
 .about-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-/* services — pack slider */
-.pack-wrap { max-width: 760px; margin: 0 auto; text-align: center; }
-
-.pack-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: -1rem 0 3rem;
-  padding-bottom: 1rem;
-}
-.pack-tabs .pack-tab {
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-.pack-tabs .pack-tab.active { color: var(--fg); font-weight: 600; }
-
-.pack-slide { display: none; text-align: left; }
-.pack-slide.active { display: block; }
-
-.pack-card {
-  background: #f4f4f4;
-  padding: clamp(2.5rem, 6vw, 4rem);
-}
-.pack-inner { max-width: 600px; margin: 0 auto; }
-
-.pack-slide h3 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 0.9rem;
-  margin: 0 0 0;
-}
-.pack-slide h3 em { font-style: italic; font-family: var(--font-serif); text-transform: none; letter-spacing: 0; font-size: 0.9rem; color: var(--muted); margin-left: 0.4rem; }
-
-.pack-details {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 0 1.5rem;
-  margin: 0;
-}
-.pack-details dt, .pack-details dd {
-  border-bottom: 1px solid var(--line);
-  padding: 1.3rem 0;
-}
-.pack-details dt:last-of-type, .pack-details dd:last-of-type { border-bottom: none; }
-.pack-details dt { font-size: 0.85rem; color: var(--muted); }
-.pack-details dd { margin: 0; font-size: 0.98rem; }
-.pack-details dd.pack-price { grid-column: 2; }
-
-.pack-desc { font-size: 0.92rem; font-style: italic; color: var(--muted); margin: 1.5rem 0; }
-
-.pack-note {
-  text-align: left;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--muted);
-  margin-top: 1.5rem;
-}
-.pack-cta {
-  display: inline-block;
-  text-align: center;
-  padding: 0.7rem 1.4rem;
-  border: 1px solid var(--line);
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-.pack-cta:hover { background: var(--fg); color: var(--bg); }
-
-.extras { margin-top: 3.5rem; padding-top: 2rem; }
-.extras-list { list-style: none; padding: 0; margin: 0; }
-.extras-list li {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 0.2rem 1rem;
-  padding: 1rem 0;
-}
-.extra-name { font-family: var(--font-serif); font-size: 1.05rem; }
-.extra-price { font-family: var(--font-heading); font-weight: 600; font-size: 1.05rem; }
-.extra-desc { grid-column: 1 / -1; font-size: 0.88rem; color: var(--muted); }
 
 /* faq */
 .faq-list details {
@@ -327,8 +239,6 @@ section {
 
 /* responsive */
 @media (max-width: 640px) {
-  .pack-details { grid-template-columns: 1fr; gap: 0.3rem 0; }
-  .pack-details dt { margin-top: 0.6rem; }
 }
 
 @media (max-width: 640px) {
